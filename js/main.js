@@ -1442,19 +1442,26 @@ window.addEventListener('DOMContentLoaded', function (){
 		var DOM = {
 			$linksBox: $('.js-navigation-links'),
 			$toggler: $('.js-open-navigation-links'),
-			overlay: document.querySelector('.js-overlay')
+			overlay: document.querySelector('.js-overlay'),
+
+
+			$toggler11: $('.navigation_bar')
 		}
 
 		function closeMenu() {
 			DOM.$toggler.removeClass('state-opened');
 			DOM.$linksBox.slideUp();
 			$(DOM.overlay).removeClass('state-visible');
+
+			DOM.$toggler11.removeClass('active');
 		}
 
 		function toggleMenu() {
 			DOM.$toggler.toggleClass('state-opened');
 			DOM.$linksBox.slideToggle();
 			$(DOM.overlay).toggleClass('state-visible');
+
+			DOM.$toggler11.toggleClass('active');
 		}
 
 		var bind = function() {
@@ -1462,6 +1469,7 @@ window.addEventListener('DOMContentLoaded', function (){
 				event.preventDefault();
 				toggleMenu();
 			});
+
 
 			$('.js-navigation-link').on('click', function(event) {
 				event.preventDefault();
