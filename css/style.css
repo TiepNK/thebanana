@@ -164,18 +164,77 @@ p:hover {
     transition-duration: 0.8s;
 }
 /*end--------------*/
+/*back top---------------------------*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
 /*header------------*/
+.bana-social{
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  padding-top: 15px;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.bana-social ul{
+  list-style: none;
+}
+.bana-social ul li{
+  display: inline-block;
+  margin-left: 15px;
+}
 .navigation_bar{
   background: #fff;
   padding: 0 60px;
+  -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.navigation_bar .the-banana-canvas{
+  display: none;
+}
+nav.active .the-banana{
+  display: none;
+}
+nav.active .the-banana-canvas{
+  display: block;
 }
 nav.active{
   background: #222222;
   height: 100%;
+  padding: 0;
+  -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+nav.active .header__burger_button{
+  padding-left: 60px;
 }
 .navigation_bar__toggler_box{
   padding: 30px 0;
   height: 90px;
+}
+.navigation_bar__links_box{
+  height: 100%;
+  /*background: red;*/
 }
 .o-ur-team {  
   height: 32px; 
@@ -327,6 +386,18 @@ nav.active .close {
 .tile-portfolios{
   overflow: hidden;
   margin-top: 130px;
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+.tile-portfolios::before{
+  content: "";
+  width: 120px;
+  height: 1px;
+  background: #222222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .portfolios { 
   height: 79px; 
@@ -346,14 +417,14 @@ nav.active .close {
   border: 0; 
   font-family: Poppins;
   min-width: 120px;
-  color: #222222; 
+  color: #9A9A9A; 
   text-transform: uppercase;
   font-size: 20px;  
   font-weight: 500;  
   letter-spacing: 5px;  
   line-height: 32px;
   margin: 0 70px 0 0;
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
   text-align: center;
   -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
@@ -364,7 +435,7 @@ nav.active .close {
     transition-duration: 0.8s;
     position: relative;
 }
-.toolbar .fil-cat:before{
+/*.toolbar .fil-cat:before{
   content: "";
   width: 0;
   height: 1px;
@@ -380,11 +451,12 @@ nav.active .close {
   width: 100%;
   -webkit-transition-duration: 0.8s;
     transition-duration: 0.38;
-}
+}*/
 .toolbar .active{
   box-shadow: none;
   /*border-top: 1px solid #222222;
   border-radius: 0;*/
+  color: #222222;
   -webkit-transition-duration: 0.8s;
     transition-duration: 0.38;
 }
@@ -392,6 +464,7 @@ nav.active .close {
     outline: 0;
 }
 .portfolio-wap .scale-anm{
+    margin: 0 22px;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
 }
@@ -407,6 +480,7 @@ nav.active .close {
 .project-name{
   margin-top: 5px;
   margin-bottom: 50px;
+  padding-bottom: 30px;
 }
 .project-name a{ 
   height: 29px; 
