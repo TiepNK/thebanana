@@ -9,13 +9,13 @@ body{
   font-weight: 400;
 }
 #portfolio {  
-    margin: 1rem 0;
+    /*margin: 1rem 0;*/
     -webkit-column-count: 3; 
     -moz-column-count: 3;
     column-count: 3;
     -webkit-column-gap: 1rem;
     -moz-column-gap: 1rem;
-    column-gap: 1rem;
+    /*column-gap: 1rem;*/
     -webkit-column-width: 33.33333333333333%;
     -moz-column-width: 33.33333333333333%;
     column-width: 33.33333333333333%;
@@ -32,7 +32,7 @@ body{
 }
 
 .scale-anm {
-  transform: scale(1);
+  transform: scale(0.9);
 }
 
 
@@ -153,7 +153,7 @@ p:hover {
   background: transparent;
   position: absolute;
   bottom: -10px;
-  left: -50px;
+  left: -40px;
   -webkit-transition-duration: 0.8s;
     transition-duration: 0.8s;
 }
@@ -167,23 +167,32 @@ p:hover {
 /*back top---------------------------*/
 #return-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
-    width: 50px;
-    height: 50px;
+    bottom: 40px;
+    right: 60px;
+    background: #222222;
+    width: 40px;
+    height: 40px;
     display: block;
     text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
     display: none;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+#return-to-top:before{
+  font-family: "Ionicons";
+  content: "\f366";
+  color: #ffffff;  
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+    
 }
 /*header------------*/
 .bana-social{
@@ -219,18 +228,25 @@ nav.active .the-banana-canvas{
   display: block;
 }
 nav.active{
+  /*position: absolute;*/
   background: #222222;
   height: 100%;
   padding: 0;
   -webkit-transition-duration: 0.8s;
     transition-duration: 0.8s;
 }
-nav.active .header__burger_button{
-  padding-left: 60px;
+.overlay{
+  background: #222222;
 }
+/*nav.active .header__burger_button{
+  padding-left: 60px;
+}*/
 .navigation_bar__toggler_box{
   padding: 30px 0;
   height: 90px;
+}
+nav.active .navigation_bar__toggler_box{
+  padding: 30px 60px;
 }
 .navigation_bar__links_box{
   height: 100%;
@@ -276,14 +292,30 @@ nav.active .the-banana{
 nav.active .the-banana a{
   color: #ffffff;
 }
-.frg-slider2-wap:before{
+
+
+
+
+.page-scroll{
+   background: #F8E71C;
+    height: 100px; 
+    width: 60px;  
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.page-scroll:before{
   font-family: "Ionicons";
   content: "\f3d4";
   color: #222222;  
   font-size: 50px;
   position: absolute;
   z-index: 99;
-  bottom: -40px;
+  bottom: 10px;
   left: 50%;
   cursor: pointer;
   transform: translateX(-50%);
@@ -293,26 +325,10 @@ nav.active .the-banana a{
   -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
-.frg-slider2-wap:hover:before{
-  bottom: -50px;
+.page-scroll:hover:before{
+  bottom: 0;
   -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-}
-.frg-slider2-wap:after{
-  background: #F8E71C;
-  font-family: "Ionicons";
-  content: "\f3d4";
-  color: #222222;
-  font-size: 0;
-  height: 100px; 
-  width: 60px;  
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
 }
 .navigation_bar .header__burger_button:before {
   background: transparent;
@@ -412,15 +428,15 @@ nav.active .close {
 .toolbar{
   margin-top: 23px;
   margin-bottom: 70px;
+  padding-left: 35px;
 }
 .toolbar .btn{
   border: 0; 
   font-family: Poppins;
-  min-width: 120px;
   color: #9A9A9A; 
   text-transform: uppercase;
   font-size: 20px;  
-  font-weight: 500;  
+  font-weight: 400;  
   letter-spacing: 5px;  
   line-height: 32px;
   margin: 0 70px 0 0;
@@ -434,6 +450,9 @@ nav.active .close {
   -webkit-transition-duration: 0.38;
     transition-duration: 0.8s;
     position: relative;
+}
+.toolbar .btn:hover{
+  color: #222222;
 }
 /*.toolbar .fil-cat:before{
   content: "";
@@ -464,7 +483,8 @@ nav.active .close {
     outline: 0;
 }
 .portfolio-wap .scale-anm{
-    margin: 0 22px;
+    margin: 0 5px;
+    /*white-space: pre-line;*/
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
 }
@@ -473,14 +493,16 @@ nav.active .close {
   position: relative;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
-  -webkit-box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.2);
-  box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.1);
+  box-shadow: 0px 8px 50px -6px rgba(0,0,0,0.1);
 }
 .project-name{
   margin-top: 5px;
   margin-bottom: 50px;
   padding-bottom: 30px;
+  height: 100%;
+  white-space: pre-line;
 }
 .project-name a{ 
   height: 29px; 

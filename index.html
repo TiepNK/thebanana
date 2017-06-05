@@ -168,10 +168,27 @@
           <!-- end item -->
         </div>
       </div>
-      <!-- <div class="icon-bottom">
-        <a href="javascript:" id="down-icon">mui ten xanh</a>
-      </div> -->
+      <div class="icon-bottom">
+        <a class="page-scroll" href="#port-wap"></a>
+      </div>
     </div>
+
+    <script>
+      $(function() {
+            $(document).on('click', 'a.page-scroll', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+    </script>
+<!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+
+
   <!-- end slider---------------------------------- -->
 <div class="portfolio-wap" id="port-wap">
   <div class="tile-portfolios">
@@ -187,19 +204,19 @@
  
 <div style="clear:both;"></div>   
 <div id="portfolio">
-  <div class="tile scale-anm graphic other all">
+  <div class="tile scale-anm graphic other all application">
         <img src="img/chudu.png" alt="" />
         <h2 class="project-name">
           <a href="detail.html">Project Name #1</a>
         </h2>
   </div>
-  <div class="tile scale-anm application">
+  <div class="tile scale-anm application all">
             <img src="img/thumb/destino.png" alt="" />
             <h2 class="project-name">
           <a href="detail.html">Project Name #7</a>
         </h2>
   </div>
-  <div class="tile scale-anm application">
+  <div class="tile scale-anm application all">
             <img src="img/thumb/handlove.png" alt="" />
             <h2 class="project-name">
           <a href="detail.html">Project Name #13</a>
@@ -211,13 +228,13 @@
           <a href="detail.html">Project Name #1</a>
         </h2>
   </div>
-  <div class="tile scale-anm application">
+  <div class="tile scale-anm application all">
             <img src="img/thumb/papa.png" alt="" />
             <h2 class="project-name">
           <a href="detail.html">Project Name #7</a>
         </h2>
   </div>
-  <div class="tile scale-anm application">
+  <div class="tile scale-anm application all">
             <img src="img/thumb/quin.png" alt="" />
             <h2 class="project-name">
           <a href="detail.html">Project Name #13</a>
@@ -235,8 +252,9 @@
       Copyright © 2016–2017 The Banana Team.
   </p>
 </div>
+
 <!-- Return to Top -->
-<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+<a href="javascript:" id="return-to-top"></i></a>
 <script>
     // ===== Scroll to Top ==== 
     $(window).scroll(function() {
@@ -251,18 +269,6 @@
             scrollTop : 0                       // Scroll to top of body
         }, 500);
     });
-
-
-    // $('#down-icon').click(function() {      // When arrow is clicked
-    //     $('#port-wap').animate({
-    //         scrollTop : 0                   // Scroll to top of body
-    //     }, 500);
-    // });
-
-
-
-
-
 
 	  $(function() {
 			var selectedClass = "";
