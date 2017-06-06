@@ -7,6 +7,7 @@ body{
   font-family: 'Poppins', sans-serif;
   font-style: 14px;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 #portfolio {  
     /*margin: 1rem 0;*/
@@ -211,6 +212,25 @@ p:hover {
 .bana-social ul li{
   display: inline-block;
   margin-left: 15px;
+}
+.bana-social ul li a .img-01{
+  opacity: 0;
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.bana-social ul li:hover a .img-01{
+  opacity: 1;
+  top: 50%;
+  -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.bana-social ul li:hover a .img-00{
+  opacity: 0;
+  -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
 }
 .navigation_bar{
   background: #fff;

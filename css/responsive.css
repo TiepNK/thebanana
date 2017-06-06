@@ -137,7 +137,7 @@
 		overflow: hidden;
 	}
 	.carousel-inner>.item img{
-		height: 100%;
+		width: 100%;
 	}
 	.project-name{
 		margin-bottom: 10px;
@@ -151,6 +151,45 @@
 	}
 	.page-scroll:before{
 		bottom: 0;
+	}
+	.detail-link .link-right,
+	.detail-link .link-left{
+		font-size: 0;
+	}
+	.back-home{
+		font-size: 0;
+	}
+	.frg-slider2-wap .carousel-indicators{
+	    top: auto;
+	    bottom: 0;
+	    width: 100%;
+	    text-align: center;
+        transform: none;
+	    -moz-transform: none;
+	    -webkit-transform: none;
+	    -o-transform: none;
+	}
+	.frg-slider2-wap .carousel-indicators li{
+		clear: none;
+		float: none;
+		margin: 0 10px;
+		top: 65px;
+	}
+	/*.frg-slider2-wap .carousel-indicators li:first-child{
+		margin-left: 0;
+	}*/
+	.frg-slider2-wap .carousel-indicators li.active{
+		margin: 0 10px;
+	}
+	.frg-slider2-wap .carousel-indicators li span {
+	    top: 0;
+	    right: 0;
+	}
+	.frg-slider2-wap .carousel-indicators li:before{
+		display: none;
+	}
+	body{
+		padding: 0;
 	}
 }
 @media (max-width: 660px){	
@@ -168,6 +207,9 @@
 		display: none;
 	}
 }
+@media (max-width: 550px){
+	
+}
 @media (max-width: 480px){
 	.the-banana {
 	    left: 60%;
@@ -179,5 +221,15 @@
 	}
 	.project-name {
 	    white-space: initial;
+	}
+	.avatar-list .avatar-img {
+	    height: 160px;
+	    width: 160px;
+	}
+	.page-scroll {
+	    bottom: 40px;
+	}
+	.frg-slider2-wap .carousel-indicators li {
+	    top: 0;
 	}
 }
