@@ -183,8 +183,8 @@ p:hover {
     transition: all 0.3s ease;
 }
 #return-to-top:before{
-  font-family: "Ionicons";
-  content: "\f366";
+  font-family: "FontAwesome";
+  content: "\f062";
   color: #ffffff;  
   font-size: 24px;
   position: absolute;
@@ -352,29 +352,31 @@ nav.active .the-banana a{
 }
 .navigation_bar .header__burger_button:before {
   background: transparent;
-  font-family: "Ionicons";
-  content: "\f20e";
-  height: 24px; 
-  width: 18px;  
-  color: #222222;  
-  font-size: 28px;  
-  font-weight: 500; 
+  font-family: "FontAwesome";
+  content: "\f0c9";
+  height: 8px;
+  width: 18px;
+  color: #222222;
+  font-size: 21px;
+  font-weight: 500;
   line-height: 26px;
   position: relative;
-  top: -8px;
+  top: -4px;
 }
 .navigation_bar .state-opened:before {
-    content: "\f2d7";
+    font-family: "FontAwesome";
+    content: "\f00d";
     color: #fff;
-    font-size: 24px;
+    font-size: 21px;
 }
 .navigation_bar .close{
   display: none;
 }
 nav.active .o-ur-team{
-  display: none;
+  color: #ffffff;
+  width: 100%;
 }
-nav.active .close {
+/*nav.active .close {
   display: inline-block;
   height: 32px;
   width: 87px;
@@ -389,7 +391,7 @@ nav.active .close {
   font-weight: 400;
   padding-left: 23px;
   text-transform: uppercase;
-}
+}*/
 .the-design-of-everyd { 
   height: 160px;  
   width: 836px; 

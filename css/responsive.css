@@ -47,6 +47,9 @@
 	nav.active .close{
 		display: none;
 	}
+	nav.active .o-ur-team{
+		display: block;
+	}
 
 	.frg-slider2-wap .carousel-indicators li{
 		margin: 20px 0;
@@ -143,8 +146,9 @@
 	.project-name{
 		margin-bottom: 10px;
 	}
-	.navigation_bar .state-opened:before{
-		top: 8px;
+	.navigation_bar.active .state-opened:before{
+		top: 20px;
+    	left: -30px;
 	}
 	.page-scroll {
 	    height: 70px;
@@ -250,10 +254,6 @@
 	    left: 60%;
 	    top: 45%;
 	}
-	/*.project-name a{
-		letter-spacing: 1px;
-		font-size: 8px;
-	}*/
 	.project-name {
 	    white-space: initial;
 	}
@@ -261,10 +261,16 @@
 	    height: 160px;
 	    width: 160px;
 	}
-	/*.page-scroll {
-	    bottom: 40px;
-	}*/
-	/*.frg-slider2-wap .carousel-indicators li {
-	    top: 0;
-	}*/
+	.carousel-inner>.item {
+	    height: 465px;
+	}
+	.navigation_bar.active .state-opened:before {
+	    left: -45px;
+	}
+	.navigation_bar .header__burger_button:before{
+		top: -8px;
+	}
+	.navigation_bar.active .state-opened:before{
+		top: 20px;
+	}
 }
