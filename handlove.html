@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>The Banana</title>
+    <title>Papag</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Latest compiled and minified CSS -->
+  <!-- Latest compiled and minified CSS -->
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/bootstrap.min.css">	
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
 	<!-- canvas menu -->
     <script src="js/main.js"></script>    
     <link rel="stylesheet" href="css/main.css">
     <!-- end canvas menu -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
     <link rel="stylesheet" href="fonticon/css/icofont.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body class="bana-detail">
  <!-- == START OF PRESENTATION NAVBAR ==-->
   <nav class="navigation_bar"> 
-  	<div class="logo">
-  		<h1 class="the-banana"><a href="index.html">
-          <img src="img/logo.png" alt="logo image"> 
+    <div class="logo">
+      <h1 class="the-banana"><a href="index.html">
+          <img src="img/logo.png" alt="..."> 
       </a></h1>
-      <!-- <h1 class="the-banana the-banana-canvas"><a href="index.html">
+      <h1 class="the-banana the-banana-canvas"><a href="index.html">
           <img src="img/logo_invert.png" alt="..."> 
-      </a></h1> -->
-  	</div>
+      </a></h1>
+    </div>
     <div class="bana-social">
       <ul>
         <li>
@@ -65,7 +63,7 @@
     <div class="navigation_bar__toggler_box">
       <button type="button" class="header__burger_button js-open-navigation-links"></button>
       <span class="o-ur-team">Our Team</span>
-      <!-- <span class="close">close</span> -->
+      <span class="close">close</span>
     </div>
     <div class="navigation_bar__links_box js-navigation-links">
       <div class="container">
@@ -141,148 +139,36 @@
     </div>
   </nav>
   <!-- == END OF PRESENTATION NAVBAR ==-->
-  <!-- slider------------------------------ -->
-  <div class="frg-slider2-wap">   
-      <div id="carousel-example-generic-01" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic-01" data-slide-to="0" class="active"><span>01</span></li>
-          <li data-target="#carousel-example-generic-01" data-slide-to="1" ><span>02</span></li>
-          <li data-target="#carousel-example-generic-01" data-slide-to="2"><span>03</span></li>
-          <li data-target="#carousel-example-generic-01" data-slide-to="3"><span>04</span></li>
-          <li data-target="#carousel-example-generic-01" data-slide-to="4"><span>05</span></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <!-- start item -->
-          <div class="item active">
-			  <a href="papagarden.html"><img src="img/Papa's-Garden-showcase.jpg" alt="papa garden slide"></a>              
-          </div>
-          <!-- end item -->
-          <!-- start item -->
-          <div class="item">
-            <img src="img/mugen_banner.png" alt="mugen slide">            
-          </div>
-          <!-- end item -->
-          <!-- start item -->
-          <div class="item">
-            <a href="petlove.html"><img src="img/petlove_slide.png" alt="pet love slide">           
-          </div>
-          <!-- end item -->
-          <!-- start item -->
-          <div class="item active">
-			  <a href="papagarden.html"><img src="img/Papa's-Garden-showcase.jpg" alt="papa garden slide"></a>              
-          </div>
-          <!-- end item -->
-          <!-- start item -->
-          <div class="item">
-            <a href="evez.html"><img src="img/evez_slide.png" alt="pet love slide">           
-          </div>
-          <!-- end item -->
-        </div>
-      </div>
-      <div class="icon-bottom">
-        <a class="page-scroll" href="#port-wap"></a>
-      </div>
+<div class="bana-detail">
+  <div class="onstreet">
+      <a class="back-home" href="index.html">Home</a>
+      <span>onstreet</span>
+  </div>
+  <div class="container">
+    <div class="img-detail">
+        <img src="http://placehold.it/1170x1215" alt="...">
     </div>
-
-    <script>
-      $(function() {
-            $(document).on('click', 'a.page-scroll', function(event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1500, 'easeInOutExpo');
-                event.preventDefault();
-            });
-        });
-    </script>
-<!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-
-
-  <!-- end slider---------------------------------- -->
-<div class="portfolio-wap" id="port-wap">
-  <div class="tile-portfolios">
-  <h2 class="portfolios">Portfolios</h2>
-</div>
-<div class="toolbar mb2 mt2">
-  <button class="btn fil-cat active" href="" data-rel="all">All</button>
-  <button class="btn fil-cat" data-rel="graphic">Graphic</button>
-  <button class="btn fil-cat" data-rel="design">Web design</button>
-  <button class="btn fil-cat" data-rel="application">Application</button>
-  <button class="btn fil-cat" data-rel="other">Other</button>
-</div> 
- 
-<div style="clear:both;"></div>   
-<div id="portfolio">
-  <div class="tile scale-anm graphic other all application">
-	  <a href="petlove.html"><img src="img/thumb/petlove.png" alt="pet love thumb" /></a>
-        <h2 class="project-name">
-          <a href="petlove.html">Pet Love UI KIT</a>
-        </h2>
-  </div>
-  <div class="tile scale-anm application all">
-	  <a href="detino.no13design.com"><img src="img/thumb/destino.png" alt="" /></a>
-            <h2 class="project-name">
-          <a href="detino.no13design.com">Destino Dating App UI KIT</a>
-        </h2>
-  </div>
-  <div class="tile scale-anm application all">
-	  <a href="handlove.html"><img src="img/thumb/handlove.png" alt="" /></a>
-            <h2 class="project-name">
-          <a href="handlove.html">Hand love Template</a>
-        </h2>
-  </div>
-    <div class="tile scale-anm graphic other all">
-		<a href="mugen.no13design.com"><img src="img/thumb/mugen.png" alt="" /></a>
-        <h2 class="project-name">
-          <a href="mugen.no13design.com">Mugen App UI KIT</a>
-        </h2>
-  </div>
-  <div class="tile scale-anm application all">
-	  <a href="papagarden.html"><img src="img/thumb/papa.jpg" alt="" /></a>
-            <h2 class="project-name">
-            <a href="papagarden.html">Papa Garden App </a>
-        </h2>
-  </div>
-  <div class="tile scale-anm application all">
-	  <a href="game.html"><img src="img/thumb/game_character.jpg" alt="" /></a>
-            <h2 class="project-name">
-          <a href="game.html">Project Name #13</a>
-        </h2>
-  </div>
-</div>
-
-<div style="clear:both;"></div>   
-  <!-- <div class="btn-pflo">
-    <a class="shape" href="#">More</a>
-  </div> -->
+    <div class="img-detail">
+        <img src="http://placehold.it/1170x800" alt="...">
+    </div>
+    <div class="img-detail">
+        <img src="http://placehold.it/1170x1010" alt="...">
+    </div>
+    <div class="img-detail">
+        <img src="http://placehold.it/1170x535" alt="...">
+    </div>
+    <div class="detail-link">
+        <a class="link-left" href="#">Linux Or Windows Which Is It</a>
+        <a class="link-right" href="#">Compatible Inkjet Cartridge</a>
+    </div> 
+  </div>    
 </div>
 <div class="footer">
   <p class="copyright-2016-201">
       Copyright © 2016–2017 The Banana Team.
   </p>
 </div>
-
-<!-- Return to Top -->
-<a href="javascript:" id="return-to-top"></i></a>
 <script>
-    // ===== Scroll to Top ==== 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-            $('#return-to-top').fadeIn(200);    // Fade in the arrow
-        } else {
-            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-        }
-    });
-    $('#return-to-top').click(function() {      // When arrow is clicked
-        $('body,html').animate({
-            scrollTop : 0                       // Scroll to top of body
-        }, 500);
-    });
-
 	  $(function() {
 			var selectedClass = "";
 			$(".fil-cat").click(function(){ 
