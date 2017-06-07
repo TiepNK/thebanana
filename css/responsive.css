@@ -233,6 +233,9 @@
 	.footer:before {
 	    width: 140px;
 	}
+	nav.active .navigation_bar__toggler_box {
+	    padding: 0 60px;
+	}
 }
 @media (max-width: 660px){	
 	.the-design-of-everyd{
@@ -242,16 +245,22 @@
 	.the-banana a{
 		font-size: 18px;
 	}
-	.portfolios{
+	/*.portfolios{
 		font-size: 16px;
-	}	
+	}*/	
+	.tile-portfolios{
+		padding-left: 0;
+	}
+	.portfolios{
+		font-size: 36px;
+	}
 }
 @media (max-width: 550px){
 	
 }
 @media (max-width: 480px){
 	.the-banana {
-	    left: 60%;
+	    left: 50%;
 	    top: 45%;
 	}
 	.project-name {
@@ -262,7 +271,7 @@
 	    width: 160px;
 	}
 	.carousel-inner>.item {
-	    height: 465px;
+	    height: 350px;
 	}
 	.navigation_bar.active .state-opened:before {
 	    left: -45px;
@@ -272,5 +281,11 @@
 	}
 	.navigation_bar.active .state-opened:before{
 		top: 20px;
+	}
+	.navigation_bar{
+		padding: 0 15px;
+	}
+	.frg-slider2-wap .carousel-indicators li span{
+		position: absolute;
 	}
 }

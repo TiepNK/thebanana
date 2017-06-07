@@ -361,7 +361,7 @@ nav.active .the-banana a{
   font-weight: 500;
   line-height: 26px;
   position: relative;
-  top: -4px;
+  top: -9px;
 }
 .navigation_bar .state-opened:before {
     font-family: "FontAwesome";
