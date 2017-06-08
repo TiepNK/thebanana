@@ -527,6 +527,7 @@ nav.active .o-ur-team{
 .portfolio-wap .scale-anm{
     margin: 0 5px;
     /*white-space: pre-line;*/
+	display: inline-block!important;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
 }
@@ -593,7 +594,6 @@ nav.active .o-ur-team{
   overflow: hidden;
   position: relative;
   margin-top: 120px;
-  margin-bottom: 20px;
 }
 .footer:before{
   content: "";
@@ -734,9 +734,37 @@ nav.active .o-ur-team{
 .img-detail img{
   width: 100%;
 }
+.btn-detail{
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin-top: 80px;
+}
+.btn-detail a{
+  background: #222222;
+  border: 1px solid #222;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 80px;
+  text-align: center;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Poppins; font-size: 14px;  font-weight: 600; letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 15px;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.btn-detail a:hover{
+  background: transparent;
+  color: #222222;
+   -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
 .detail-link {
   border-top: 1px solid #D8D8D8;
-  margin-top: 40px;
+  margin-top: 80px;
   overflow: hidden;
   padding-top: 25px;
 }
