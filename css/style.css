@@ -256,6 +256,33 @@ nav.active{
   -webkit-transition-duration: 0.8s;
     transition-duration: 0.8s;
 }
+
+
+/*.navigation_bar__links_box{
+  overflow-y: scroll;
+  padding-bottom: 100px;
+}
+#style-1::-webkit-scrollbar-track
+{
+  background-color: red;
+  display: none;
+}
+
+#style-1::-webkit-scrollbar
+{
+  background-color: red;
+  display: none;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+  background-color: red;
+  display: none;
+
+}*/
+
+
+
 .overlay{
   background: #222222;
 }
@@ -274,14 +301,15 @@ nav.active .navigation_bar__toggler_box{
   /*background: red;*/
 }
 .o-ur-team {  
-  height: 32px; 
-  width: 140px; 
-  color: #222222; 
+  height: 32px;
+  width: 140px;
+  color: #222222;
   text-transform: uppercase;
-  font-size: 20px;  
-  letter-spacing: 5px;  
+  font-size: 16px;
+  letter-spacing: 4px;
   line-height: 32px;
-  padding-left: 25px;
+  padding-left: 10px;
+  font-weight: bold;
 }
 .the-banana{
   position: absolute;
@@ -371,15 +399,16 @@ nav.active .the-banana a{
 .navigation_bar .header__burger_button:before {
   background: transparent;
   font-family: "FontAwesome";
-  content: "\f0c9";
+  /*content: "\f0c9";*/
+  content: "\f0c0";
   height: 8px;
   width: 18px;
   color: #222222;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 26px;
   position: relative;
-  top: -9px;
+  top: -1px;
 }
 .navigation_bar .state-opened:before {
     font-family: "FontAwesome";
@@ -631,6 +660,9 @@ nav.active .o-ur-team{
 }
 /*end-------------*/
 /*our team------------*/
+.bana-ourteam{
+  margin-top: 30px;
+}
 .avatar-team{
   margin-top: 70px;
   overflow: hidden;
@@ -650,7 +682,7 @@ nav.active .o-ur-team{
   margin: auto;
 }
 .avatar-list .avatar-title{
-    color: #FFFFFF; 
+    color: #222222; 
     font-family: Poppins; 
     font-size: 14px;  
     font-weight: bold;  
@@ -660,7 +692,7 @@ nav.active .o-ur-team{
     margin-bottom: 0;
 }
 .avatar-list .avatar-position{
-  color: #D8D8D8; 
+  color: #222222; 
   font-family: Poppins; 
   font-size: 13px;  
   line-height: 21px;
@@ -673,7 +705,7 @@ nav.active .o-ur-team{
 .avatar-list .avatar-position:hover,
 .avatar-list .avatar-position:focus{
   background: transparent;
-  color: #D8D8D8; 
+  color: #222222; 
   text-decoration: none;
   cursor: default;
 }

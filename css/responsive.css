@@ -264,6 +264,10 @@
 	
 }
 @media (max-width: 480px){
+	.back-home,
+	.onstreet span{
+		font-size: 18px;
+	}
 	.the-banana {
 	    left: 50%;
 	    top: 45%;
