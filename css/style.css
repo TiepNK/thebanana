@@ -677,7 +677,6 @@ nav.active .o-ur-team{
 .avatar-list .avatar-img {  
   height: 170px;  
   width: 170px; 
-  border-radius: 90px;
   overflow: hidden;
   margin: auto;
 }
