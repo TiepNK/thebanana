@@ -249,7 +249,6 @@ nav.active .the-banana-canvas{
   display: block;
 }
 nav.active{
-  /*position: absolute;*/
   background: #222222;
   height: 100%;
   padding: 0;
@@ -257,48 +256,20 @@ nav.active{
     transition-duration: 0.8s;
 }
 
-
-/*.navigation_bar__links_box{
-  overflow-y: scroll;
-  padding-bottom: 100px;
-}
-#style-1::-webkit-scrollbar-track
-{
-  background-color: red;
-  display: none;
-}
-
-#style-1::-webkit-scrollbar
-{
-  background-color: red;
-  display: none;
-}
-
-#style-1::-webkit-scrollbar-thumb
-{
-  background-color: red;
-  display: none;
-
-}*/
-
-
-
 .overlay{
   background: #222222;
 }
-/*nav.active .header__burger_button{
-  padding-left: 60px;
-}*/
+
 .navigation_bar__toggler_box{
   padding: 30px 0;
   height: 90px;
+  box-shadow: 0 1px 0 0 rgba(216,216,216,0.5);
 }
 nav.active .navigation_bar__toggler_box{
-  padding: 30px 60px;
+  padding: 30px 0px;
 }
 .navigation_bar__links_box{
   height: 100%;
-  /*background: red;*/
 }
 .o-ur-team {  
   height: 32px;
@@ -341,8 +312,6 @@ nav.active .the-banana{
 nav.active .the-banana a{
   color: #ffffff;
 }
-
-
 
 
 .page-scroll{
@@ -423,22 +392,7 @@ nav.active .o-ur-team{
   color: #ffffff;
   width: 100%;
 }
-/*nav.active .close {
-  display: inline-block;
-  height: 32px;
-  width: 87px;
-  color: #FFFFFF;
-  font-family: Poppins;
-  font-size: 20px;
-  letter-spacing: 5px;
-  float: initial;
-  line-height: 32px;
-  text-shadow: none;
-  opacity: 1;
-  font-weight: 400;
-  padding-left: 23px;
-  text-transform: uppercase;
-}*/
+
 .the-design-of-everyd { 
   height: 160px;  
   width: 836px; 
@@ -525,27 +479,9 @@ nav.active .o-ur-team{
 .toolbar .btn:hover{
   color: #222222;
 }
-/*.toolbar .fil-cat:before{
-  content: "";
-  width: 0;
-  height: 1px;
-  background: #222222;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition-duration: 0.8s;
-    transition-duration: 0.38;
-}
-.toolbar .fil-cat:hover:before,
-.toolbar .active:before{
-  width: 100%;
-  -webkit-transition-duration: 0.8s;
-    transition-duration: 0.38;
-}*/
+
 .toolbar .active{
   box-shadow: none;
-  /*border-top: 1px solid #222222;
-  border-radius: 0;*/
   color: #222222;
   -webkit-transition-duration: 0.8s;
     transition-duration: 0.38;
@@ -618,11 +554,13 @@ nav.active .o-ur-team{
   transition-duration: 0.8s;
 }
 .footer{
+  background-color: #F8E81C;
   display: block;
   text-align: center;
   overflow: hidden;
   position: relative;
   margin-top: 120px;
+  font-weight: normal; 
 }
 .footer:before{
   content: "";
@@ -651,15 +589,12 @@ nav.active .o-ur-team{
   width: 100%;
   text-align: center;
   text-transform: capitalize;
-  font-weight: 500;
 }
 .copyright-2016-201:hover{
   background: transparent;
   color: #222222;  
   cursor: default;
 }
-/*end-------------*/
-/*our team------------*/
 .bana-ourteam{
   margin-top: 30px;
 }
@@ -710,7 +645,7 @@ nav.active .o-ur-team{
 }
 /*Detail--------------------------------------*/
 .bana-detail{
-  padding: 0;
+  padding-top: 80px;
 }
 .onstreet { 
   height: 160px;  
