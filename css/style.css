@@ -630,7 +630,6 @@ nav.active .o-ur-team{
   font-size: 20px;
   letter-spacing: 5px;
   line-height: 32px;
-  padding-left: 25px;
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -641,15 +640,8 @@ nav.active .o-ur-team{
   -webkit-transform: translateY(-50%);
   -o-transform: translateY(-50%);
 }
-.back-home:before {
-  font-family: "Ionicons";
-  content: "\f2ca";
-  color: #222222;
-  font-size: 20px;
-  position: absolute;
-  z-index: 99;
-  left: 0;
-  font-weight: 500;
+.back-home img{
+	margin-right: 8px;
 }
 .back-home:hover{
   text-decoration: underline;
