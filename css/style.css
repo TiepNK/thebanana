@@ -668,14 +668,13 @@ nav.active .o-ur-team{
 }
 .btn-detail a{
   background: #222222;
-  border: 1px solid #222;
   height: 45px;
   line-height: 45px;
   padding: 0 80px;
   text-align: center;
   display: inline-block;
   color: #ffffff;
-  font-family: Poppins; font-size: 14px;  font-weight: 600; letter-spacing: 3px;
+  font-family: Poppins; font-size: 14px;  font-weight: 600; letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
   margin: 0 15px;
@@ -683,7 +682,7 @@ nav.active .o-ur-team{
   transition-duration: 0.8s;
 }
 .btn-detail a:hover{
-  background: transparent;
+  background-color: #F8E81C;
   color: #222222;
    -webkit-transition-duration: 0.8s;
   transition-duration: 0.8s;
