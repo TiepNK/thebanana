@@ -235,7 +235,6 @@ p:hover {
 }
 .navigation_bar{
   background: #fff;
-  padding: 0 60px;
   -webkit-transition-duration: 0.8s;
     transition-duration: 0.8s;
 }
@@ -261,7 +260,7 @@ nav.active{
 }
 
 .navigation_bar__toggler_box{
-  padding: 30px 0;
+  padding: 30px 30px;
   height: 90px;
   box-shadow: 0 1px 0 0 rgba(216,216,216,0.5);
 }
@@ -343,33 +342,13 @@ nav.active .the-banana a{
   -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
-/*.page-scroll:before{
-  font-family: "FontAwesome";
-  content: "\f175";
-  color: #222222;  
-  font-size: 40px;
-  position: absolute;
-  z-index: 99;
-  bottom: 15px;
-  left: 50%;
-  cursor: pointer;
-  transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-}*/
+
 .page-scroll:hover:before{
   bottom: 0;
   -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
 .navigation_bar .header__burger_button:before {
-  background: transparent;
-  font-family: "FontAwesome";
-  /*content: "\f0c9";*/
-  content: "\f0c0";
   height: 8px;
   width: 18px;
   color: #222222;
@@ -508,7 +487,7 @@ nav.active .o-ur-team{
 .project-name{
   margin-top: 5px;
   margin-bottom: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   height: 100%;
   white-space: pre-line;
 }
@@ -558,22 +537,13 @@ nav.active .o-ur-team{
   display: block;
   text-align: center;
   overflow: hidden;
-  position: relative;
-  margin-top: 120px;
-  font-weight: normal; 
-}
-.footer:before{
-  content: "";
-  height: 1px;
-  width: 370px;
-  background: #222222;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
+  width: 100%;
+  margin-top: 60px; 
+  left: 0px;
+
 }
+
 .copyright-2016-201{ 
   margin-top: 40px;
   padding-bottom: 20px;
@@ -650,7 +620,6 @@ nav.active .o-ur-team{
 .onstreet { 
   height: 160px;  
   width: 100%;  
-  background-color: #F6F6F6;
   text-align: center;
   margin-top: 90px;
   line-height: 160px;
