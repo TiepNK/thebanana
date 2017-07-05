@@ -627,9 +627,8 @@ nav.active .o-ur-team{
 .back-home{
   color: #222222;
   text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 5px;
-  line-height: 32px;
+  font-size: 16px;
+  letter-spacing: 4px;
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -642,6 +641,7 @@ nav.active .o-ur-team{
 }
 .back-home img{
 	margin-right: 8px;
+	margin-top: -3px;
 }
 .back-home:hover{
   text-decoration: underline;
