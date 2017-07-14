@@ -164,6 +164,7 @@ p:hover {
 /*end--------------*/
 /*back top---------------------------*/
 #return-to-top {
+	text-align: center;
     position: fixed;
     bottom: 40px;
     right: 60px;
@@ -179,18 +180,8 @@ p:hover {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-#return-to-top:before{
-  font-family: "FontAwesome";
-  content: "\f062";
-  color: #ffffff;  
-  font-size: 24px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-    
+#return-to-top{
+	padding-top: 6px;
 }
 /*header------------*/
 .bana-social{
