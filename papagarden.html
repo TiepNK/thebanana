@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Papas Garden - Scrumptious Mobile Food App</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papas Garden - Scrumptious Mobile Food App</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Latest compiled and minified CSS -->
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="css/bootstrap.min.css">  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
   <link href="css/ionicons.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/fontawesome.min.css" type="text/css" />
   <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- canvas menu -->
-    <!-- <script src="js/main.js"></script>     -->
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <!-- end canvas menu -->
-    <script src="js/bootstrap.min.js"></script>
-    
+  <!-- <script src="js/main.js"></script>     -->
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <!-- end canvas menu -->
+  <script src="js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" />
 </head>
+
 <body class="bana-detail">
- <!-- == START OF PRESENTATION NAVBAR ==-->
-  <nav class="navigation_bar"> 
+  <!-- == START OF PRESENTATION NAVBAR ==-->
+  <nav class="navigation_bar">
     <div class="logo">
-      <h1 class="the-banana"><a href="index.html">
-          <img src="img/logo.png" alt="logo image"> 
-      </a></h1>
+      <h1 class="the-banana">
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo image">
+        </a>
+      </h1>
     </div>
     <div class="bana-social">
       <ul>
@@ -59,66 +63,63 @@
         </li>
       </ul>
     </div>
-    <div class="navigation_bar__toggler_box">      
-      <a class="back-home" href="index.html"> <img src="img/ic_right.png">Home</a>
+    <div class="navigation_bar__toggler_box">
+      <a class="back-home" href="index.html">
+        <img src="img/ic_right.png">Home</a>
     </div>
     <div class="navigation_bar__links_box js-navigation-links" id="style-1">
     </div>
   </nav>
   <!-- == END OF PRESENTATION NAVBAR ==-->
-<div class="bana-detail">
-  <div class="container">
-    <div class="img-detail">
+  <div class="bana-detail">
+    <div class="container">
+      <div class="img-detail">
         <img src="img/project/papas/papas_1.jpg" alt="...">
-    </div>
-    <div class="img-detail">
         <img src="img/project/papas/papas_2.jpg" alt="...">
-    </div>
-    <div class="img-detail">
         <img src="img/project/papas/papas_3.jpg" alt="...">
-    </div>
-    <div class="img-detail">
         <img src="img/project/papas/papas_4.jpg" alt="...">
-    </div>
-    <div class="img-detail">
         <img src="img/project/papas/papas_5.jpg" alt="...">
-    </div>
-	<div class="btn-detail">
+        <img src="img/project/papas/papas_6.jpg" alt="...">
+        <img src="img/project/papas/papas_7.jpg" alt="...">
+        <img src="img/project/papas/papas_8.jpg" alt="...">
+      </div>
+      <div class="btn-detail">
         <a href="https://ui8.net/products/papas-garden-mobile-app-ui-kit"> UI8</a>
-    </div>
-    <div class="detail-link">
+      </div>
+      <div class="detail-link">
         <a class="link-left" href="https://destino.no13design.com">Destino Dating App UI Kit</a>
         <a class="link-right" href="petlove.html">Pet Lover UI Kit</a>
-    </div> 
-  </div>    
-</div>
-<div class="footer">
-  <p class="copyright-2016-201">
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p class="copyright-2016-201">
       Copyright © 2016–2017 The Banana Team.
-  </p>
-</div>
-<script>
-	  $(function() {
-			var selectedClass = "";
-			$(".fil-cat").click(function(){ 
-			selectedClass = $(this).attr("data-rel"); 
-	     $("#portfolio").fadeTo(100, 0.1);
-			$("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
-	    setTimeout(function() {
-	      $("."+selectedClass).fadeIn().addClass('scale-anm');
-	      $("#portfolio").fadeTo(300, 1);
-	    }, 300); 
-			
-		});
-	});
+    </p>
+  </div>
+  <script>
+    $(function () {
+      var selectedClass = "";
+      $(".fil-cat").click(function () {
+        selectedClass = $(this).attr("data-rel");
+        $("#portfolio").fadeTo(100, 0.1);
+        $("#portfolio div").not("." + selectedClass).fadeOut().removeClass('scale-anm');
+        setTimeout(function () {
+          $("." + selectedClass).fadeIn().addClass('scale-anm');
+          $("#portfolio").fadeTo(300, 1);
+        }, 300);
+
+      });
+    });
     // addClass active navigation_bar
-    $('button').click(function() {
-        //console.log("Clicked");
-        $('button').removeClass('active');
-        $(this).addClass('active');
+    $('button').click(function () {
+      //console.log("Clicked");
+      $('button').removeClass('active');
+      $(this).addClass('active');
     });
 
-</script>
+  </script>
 </body>
 <div class="js-overlay js-close-navigation js-close-menu overlay"></div>
+
 </html>
