@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Workplus Mobile App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="css/ionicons.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" type="text/css" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- canvas menu -->
+    <!-- <script src="js/main.js"></script>     -->
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <!-- end canvas menu -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+</head>
+
+<body class="bana-detail">
+    <!-- == START OF PRESENTATION NAVBAR ==-->
+    <nav class="navigation_bar">
+        <div class="logo">
+            <h1 class="the-banana">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo image">
+                </a>
+            </h1>
+        </div>
+        <div class="bana-social">
+            <ul>
+                <li>
+                    <a href="https://themeforest.net/user/framgia">
+                        <img class="img-00" src="img/ic_envato.svg" alt="envato">
+                        <img class="img-01" src="img/ic_envato_hover.svg" alt="envato hover">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ui8.net/users/framgia">
+                        <img class="img-00" src="img/ic_ui8.svg" alt="ui8">
+                        <img class="img-01" src="img/ic_ui8_hover.svg" alt="ui8 hover">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/Framgia">
+                        <img class="img-00" src="img/ic_behance.svg" alt="behance">
+                        <img class="img-01" src="img/ic_behance_hover.svg" alt="behance hover">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://dribbble.com/framgia">
+                        <img class="img-00" src="img/ic_dribble.svg" alt="dribbble">
+                        <img class="img-01" src="img/ic_dribble_hover.svg" alt="dribbble">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navigation_bar__toggler_box">
+            <a class="back-home" href="index.html">
+                <img src="img/ic_right.png">Home</a>
+        </div>
+        <div class="navigation_bar__links_box js-navigation-links" id="style-1">
+        </div>
+    </nav>
+    <!-- == END OF PRESENTATION NAVBAR ==-->
+    <div class="bana-detail">
+        <div class="container">
+            <div class="img-detail">
+                <img src="img/project/petlove2/petlover2_1.jpg" alt="...">
+                <img src="img/project/petlove2/petlover2_2.jpg" alt="...">
+                <img src="img/project/petlove2/petlover2_3.jpg" alt="...">
+                <img src="img/project/petlove2/petlover2_4.jpg" alt="...">
+                <img src="img/project/petlove2/petlover2_5.jpg" alt="...">
+            </div>
+
+            <div class="btn-detail">
+                <a href="https://ui8.net/products/pet-lover-20">Buy Now $48</a>
+            </div>
+            <div class="detail-link">
+                <a class="link-left" href="evez.html">Evez App UI Kit</a>
+                <a class="link-right" href="petlove.html">Pet Lover UI Kit</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="copyright-2016-201">
+            Copyright © 2016–2017 The Banana Team.
+        </p>
+    </div>
+    <script>
+        $(function () {
+            var selectedClass = "";
+            $(".fil-cat").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(100, 0.1);
+                $("#portfolio div").not("." + selectedClass).fadeOut().removeClass('scale-anm');
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn().addClass('scale-anm');
+                    $("#portfolio").fadeTo(300, 1);
+                }, 300);
+
+            });
+        });
+        // addClass active navigation_bar
+        $('button').click(function () {
+            //console.log("Clicked");
+            $('button').removeClass('active');
+            $(this).addClass('active');
+        });
+
+    </script>
+</body>
+<div class="js-overlay js-close-navigation js-close-menu overlay"></div>
+
+</html>
